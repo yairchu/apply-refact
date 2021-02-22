@@ -1,0 +1,6 @@
+[ ( "tests/examples/TemplateHaskell.hs:5:5-12: Suggestion: Suggestion: Redundant varE\nFound:\n  varE 'id\nPerhaps:\n  [| id |]\nNote: may require `{-# LANGUAGE TemplateHaskell #-}` adding to the top of the file\n"
+  , [ Replace {rtype = Pattern, pos = SrcSpan {startLine = 5, startCol = 5, endLine = 5, endCol = 13}, subts = [("[| id |]",SrcSpan {startLine = 5, startCol = 5, endLine = 5, endCol = 13})], orig = "varE 'id"}
+    , InsertComment {pos = SrcSpan {startLine = 1, startCol = 1, endLine = 1, endCol = 34}, newComment = "{-# LANGUAGE TemplateHaskell #-}"}
+    ]
+  )
+]
